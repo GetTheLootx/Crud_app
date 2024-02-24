@@ -148,7 +148,7 @@ public class HelloController implements Initializable {
     }
 
     public void deleteRecord(Integer id) {
-        String query = "DELETE from books WHERE id = " + id + "'";
+        String query = "DELETE from books WHERE id = '" + id + "'";
         executeQuery(query);
         showBooks();
         clearRecord("insert");
